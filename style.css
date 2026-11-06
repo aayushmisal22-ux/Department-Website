@@ -1,0 +1,175 @@
+
+* { box-sizing: border-box; margin: 0; padding: 0;}
+
+body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: black;
+  background-color: white;}
+.mainheader {
+  background-color: darkblue;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 4px solid orange;}
+
+.mainheader h1 {font-size: 2.2rem;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;}
+
+.mainheader h2 {font-size: 1.2rem;
+  font-weight: 400;
+  color: white;}
+
+.navbar {
+  background-color: slategray; /* Slate gray navbar base color */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Keeps menu above text layers on scroll */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);}
+
+.nav-links {list-style-type: none; display: flex; justify-content: center;}
+
+.nav-links li {position: relative;}
+
+.nav-links a {display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;}
+.nav-links a:hover, 
+.dropdown:hover .dropbtn {
+  background-color: lightsalmon; /* Changes to branding accent highlight */}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  list-style-type: none;
+}
+
+.dropdown-content li a {
+  color: black;
+  padding: 12px 20px;
+  border-bottom: 1px solid white;
+  transition: background-color 0.2s;
+}
+
+.dropdown-content li a:hover {
+  background-color: white;
+  color: orange;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;}
+
+.content-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;}
+
+.content-section {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);}
+
+.content-section h3 {
+  color: blue;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  border-left: 5px solid orange; /* Vertical block accent highlight line */
+  padding-left: 10px;}
+
+.content-section p {
+  margin-bottom: 15px;
+  text-align: justify;}
+
+.card-layout {
+  display: flex;
+  gap: 20px;}
+
+.card-item {
+  flex: 1;
+  background-color: white;
+  border: 1px solid skyblue;
+  padding: 20px;
+  border-radius: 6px;}
+
+.styled-list {
+  list-style-position: inside;
+  margin-left: 5px;}
+
+.styled-list li {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed white;
+}
+
+.list-subtext {
+  font-size: 0.9rem;
+  color: gray;
+  display: inline-block;
+  margin-top: 2px;}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 15px;}
+
+.department-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.department-table th {
+  background-color: blue;
+  color: white;
+  text-align: left;
+  padding: 12px 15px;
+  font-weight: 600;}
+
+.department-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid white;}
+
+
+.department-table tbody tr:nth-child(even) {
+  background-color: white;
+}
+
+.department-table tbody tr:hover {
+  background-color: white;
+}
+
+.department-table a {
+  color: blue;
+  text-decoration: none;}
+
+.department-table a:hover {
+  text-decoration: underline;}
+
+
+#contact-box {
+  background-color: white;
+  border: 1px dashed lightgray;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 15px;}
+
+#contact-box p {
+  margin-bottom: 8px;
+  text-align: left;}
+
+#contact-box a {
+  color: blue;
+  text-decoration: none;
+  font-weight: 500;}
+
